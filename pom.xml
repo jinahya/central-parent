@@ -87,18 +87,16 @@
     <url>https://github.com/jinahya/ossrh-maven</url>
     <tag>HEAD</tag>
   </scm>
-  <prerequisites>
-    <maven>3.1.1</maven>
-  </prerequisites>
+  <prerequisites/>
   <repositories />
   <pluginRepositories />
   <distributionManagement>
     <snapshotRepository>
-      <id>ossrh</id>
+      <id>sonatype-nexus-snapshots</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
     <repository>
-      <id>ossrs</id>
+      <id>sonatype-nexus-staging</id>
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
   </distributionManagement>
