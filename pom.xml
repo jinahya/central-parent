@@ -6,20 +6,20 @@
   <!-- The Basics -->
   <groupId>com.github.jinahya</groupId>
   <artifactId>ossrh-maven</artifactId>
-  <version>0.1-SNAPSHOT</version>
+  <version>0.1</version>
   <packaging>jar</packaging>
   <!--aparent>
     <groupId>org.sonatype.oss</groupId>
     <artifactId>oss-parent</artifactId>
     <version>9</version>
   </parent-->
-  <dependencyManagement/>
-  <dependencies/>
-  <properties/>
+  <dependencyManagement />
+  <dependencies />
+  <properties />
 
   <!-- Build Settings -->
   <build>
-    <pluginManagement/>
+    <pluginManagement />
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -70,7 +70,7 @@
       </plugin>
     </plugins>
   </build>
-  <reporting/>
+  <reporting />
 
   <!-- More Project Information -->
   <name>${project.artifactId}</name>
@@ -106,7 +106,7 @@
     <connection>scm:git:git@github.com:jinahya/ossrh-maven.git</connection>
     <developerConnection>scm:git:git@github.com:jinahya/ossrh-maven.git</developerConnection>
     <url>https://github.com/jinahya/ossrh-maven</url>
-    <tag>HEAD</tag>
+    <tag>0.1</tag>
   </scm>
   <prerequisites>
     <maven>3.1.1</maven>
