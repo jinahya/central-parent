@@ -60,7 +60,7 @@
   <name>${project.artifactId}</name>
   <description>test artifaict for ossrh</description>
   <url>http://jinahya.github.io/ossrh-maven/sites/${project.version}</url>
-  <inceptionYear>2011</inceptionYear>
+  <inceptionYear>2015</inceptionYear>
   <licenses>
     <license>
       <name>Apache 2</name>
