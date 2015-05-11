@@ -24,6 +24,7 @@
           <tagNameFormat>@{project.version}</tagNameFormat>
           <pushChanges>false</pushChanges>
           <localCheckout>true</localCheckout>
+          <goals>install</goals>
         </configuration>
       </plugin>
     </plugins>
