@@ -1,1 +1,1 @@
-# ossrh-test-maven
+# ossrh-test
