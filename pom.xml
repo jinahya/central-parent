@@ -6,7 +6,7 @@
   <!-- The Basics -->
   <groupId>com.github.jinahya</groupId>
   <artifactId>ossrh-maven</artifactId>
-  <version>0.7</version>
+  <version>0.8-SNAPSHOT</version>
   <packaging>jar</packaging>
   <dependencyManagement />
   <dependencies />
@@ -65,7 +65,7 @@
     <connection>scm:git:git@github.com:jinahya/ossrh-maven.git</connection>
     <developerConnection>scm:git:git@github.com:jinahya/ossrh-maven.git</developerConnection>
     <url>https://github.com/jinahya/ossrh-maven</url>
-    <tag>0.7</tag>
+    <tag>HEAD</tag>
   </scm>
   <prerequisites />
   <repositories />
