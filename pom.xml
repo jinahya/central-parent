@@ -6,9 +6,9 @@
   <!-- The Basics -->
   <groupId>com.github.jinahya</groupId>
   <artifactId>ossrh-parent</artifactId>
-  <version>0.1.1-SNAPSHOT</version>
+  <version>0.1.2-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <dependencyManagement/>
+  <dependencyManagement />
   <dependencies />
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -59,7 +59,7 @@
       </plugin>
     </plugins>
   </build>
-  <reporting/>
+  <reporting />
 
   <!-- More Project Information -->
   <name>ossrh-parent</name>
