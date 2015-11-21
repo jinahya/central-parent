@@ -5,21 +5,51 @@
 
   <!-- The Basics -->
   <groupId>com.github.jinahya</groupId>
-  <artifactId>ossrh-maven</artifactId>
-  <version>0.8-SNAPSHOT</version>
-  <packaging>jar</packaging>
-  <dependencyManagement />
+  <artifactId>ossrh-parent</artifactId>
+  <version>0.1.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <dependencyManagement/>
   <dependencies />
-  <properties />
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
 
   <!-- Build Settings -->
   <build>
-    <pluginManagement />
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-enforcer-plugin</artifactId>
+          <version>1.4</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-gpg-plugin</artifactId>
+          <version>1.6</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>2.10.3</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.5.2</version>
+        </plugin>
+        <plugin>
+          <groupId>org.sonatype.plugins</groupId>
+          <artifactId>nexus-staging-maven-plugin</artifactId>
+          <version>1.6.5</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
-        <version>2.5.2</version>
         <configuration>
           <tagNameFormat>@{project.version}</tagNameFormat>
           <pushChanges>false</pushChanges>
@@ -29,12 +59,12 @@
       </plugin>
     </plugins>
   </build>
-  <reporting />
+  <reporting/>
 
   <!-- More Project Information -->
-  <name>${project.artifactId}</name>
-  <description>test artifaict for ossrh</description>
-  <url>http://jinahya.github.io/ossrh-maven/sites/${project.version}</url>
+  <name>ossrh-parent</name>
+  <description>parent pom for ossrh</description>
+  <url>http://jinahya.github.io/ossrh-parent/sites/${project.version}</url>
   <inceptionYear>2015</inceptionYear>
   <licenses>
     <license>
@@ -57,17 +87,19 @@
   <!-- Environment Settings -->
   <issueManagement>
     <system>GitHub Issues</system>
-    <url>https://github.com/jinahya/${project.artifactId}/issues</url>
+    <url>https://github.com/jinahya/ossrh-parent/issues</url>
   </issueManagement>
   <ciManagement />
   <mailingLists />
   <scm>
-    <connection>scm:git:git@github.com:jinahya/ossrh-maven.git</connection>
-    <developerConnection>scm:git:git@github.com:jinahya/ossrh-maven.git</developerConnection>
-    <url>https://github.com/jinahya/ossrh-maven</url>
+    <connection>scm:git:git@github.com:jinahya/ossrh-parent.git</connection>
+    <developerConnection>scm:git:git@github.com:jinahya/ossrh-parent.git</developerConnection>
+    <url>https://github.com/jinahya/ossrh-parent</url>
     <tag>HEAD</tag>
   </scm>
-  <prerequisites />
+  <prerequisites>
+    <maven>3.0.4</maven>
+  </prerequisites>
   <repositories />
   <pluginRepositories />
   <distributionManagement>
@@ -75,10 +107,12 @@
       <id>ossrh</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
-    <!--    <repository>
+    <!--
+    <repository>
       <id>ossrh</id>
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>-->
+    </repository>
+    -->
   </distributionManagement>
   <profiles>
     <profile>
@@ -88,7 +122,6 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-enforcer-plugin</artifactId>
-            <version>1.4</version>
             <executions>
               <execution>
                 <id>require-release-version</id>
