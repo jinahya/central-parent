@@ -7,7 +7,7 @@ Just set this artifact as a parent.
 <parent>
   <groupId>com.github.jinahya</groupId>
   <artifactId>ossrh-parent</artifactId>
-  <version>0.1.1</version>
+  <version>x.y.z</version>
 </parent>
 ```
 ## `settings.xml`
@@ -19,6 +19,7 @@ We need two credentials.
   <username>username</username>
   <password>{...}</password>
 </server>
+
 <!-- for maven-gpg-plugin -->
 <server>
   <id>gpg.passphrase</id>
