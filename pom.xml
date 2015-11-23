@@ -9,7 +9,7 @@
   <version>0.1.2-SNAPSHOT</version>
   <packaging>pom</packaging>
   <dependencyManagement />
-  <dependencies />
+  <dependencies/>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
