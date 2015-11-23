@@ -1,5 +1,5 @@
 # ossrh-parent
-A parent pom project for deploying artifacts to `oss.sonatype.org`. See [OSSRH Guide](http://central.sonatype.org/pages/ossrh-guide.html)([Apache Maven](http://central.sonatype.org/pages/apache-maven.html)).
+A parent pom project for deploying artifacts to `oss.sonatype.org`. See [OSSRH Guide](http://central.sonatype.org/pages/ossrh-guide.html) (or [Apache Maven specific](http://central.sonatype.org/pages/apache-maven.html)).
 
 ## `pom.xml`
 Just set this artifact as a parent.
