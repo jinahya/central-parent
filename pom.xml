@@ -6,11 +6,11 @@
   <!-- The Basics -->
   <groupId>com.github.jinahya</groupId>
   <artifactId>ossrh-parent</artifactId>
-  <version>0.1.2-SNAPSHOT</version>
+  <version>0.1.2</version>
   <packaging>pom</packaging>
   <dependencyManagement />
-  <dependencies/>
-  <properties/>
+  <dependencies />
+  <properties />
 
   <!-- Build Settings -->
   <build>
@@ -92,7 +92,7 @@
     <connection>scm:git:git@github.com:jinahya/ossrh-parent.git</connection>
     <developerConnection>scm:git:git@github.com:jinahya/ossrh-parent.git</developerConnection>
     <url>https://github.com/jinahya/ossrh-parent</url>
-    <tag>HEAD</tag>
+    <tag>0.1.2</tag>
   </scm>
   <prerequisites>
     <maven>3.0.4</maven>
