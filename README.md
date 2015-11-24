@@ -1,7 +1,7 @@
 # ossrh-parent
 [![Build Status](https://travis-ci.org/jinahya/ossrh-parent.svg)](https://travis-ci.org/jinahya/ossrh-parent)
 [![Dependency Status](https://www.versioneye.com/user/projects/5652ef1dff016c00330005b0/badge.svg)](https://www.versioneye.com/user/projects/5652ef1dff016c00330005b0)
-[![Maven Central](https://img.shields.io/maven-central/v/com.github.jinahya/id-codec.svg)](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22id-codec%22)
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.jinahya/id-codec.svg)](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.github.jinahya%22%20AND%20a%3A%22id-codec%22)
 
 A parent pom project for deploying artifacts to `oss.sonatype.org`. See [OSSRH Guide](http://central.sonatype.org/pages/ossrh-guide.html) (or [Apache Maven specific](http://central.sonatype.org/pages/apache-maven.html)).
 
