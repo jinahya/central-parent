@@ -1,5 +1,5 @@
 # ossrh-parent
-[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
+[![GitHub license](https://img.shields.io/github/license/jinahya/ossrh-parent.svg)](https://github.com/jinahya/ossrh-parent/blob/master/LICENSE)
 [![GitHub release](https://img.shields.io/github/release/jinahya/ossrh-parent.svg)](https://github.com/jinahya/ossrh-parent/releases)
 [![Build Status](https://travis-ci.org/jinahya/ossrh-parent.svg)](https://travis-ci.org/jinahya/ossrh-parent)
 [![Dependency Status](https://www.versioneye.com/user/projects/5652ef1dff016c00330005b0/badge.svg)](https://www.versioneye.com/user/projects/5652ef1dff016c00330005b0)
