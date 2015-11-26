@@ -1,18 +1,64 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
   <modelVersion>4.0.0</modelVersion>
 
-  <!-- The Basics -->
   <groupId>com.github.jinahya</groupId>
   <artifactId>ossrh-parent</artifactId>
   <version>0.3.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <dependencyManagement />
-  <dependencies />
-  <properties />
 
-  <!-- Build Settings -->
+  <name>ossrh-parent</name>
+  <description>parent pom for ossrh</description>
+  <url>https://github.com/jinahya/${project.artifactId}</url>
+  <inceptionYear>2015</inceptionYear>
+  <licenses>
+    <license>
+      <name>Apache 2</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+      <comments>A business-friendly OSS license</comments>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>jinahya</id>
+      <name>Jin Kwon</name>
+      <email>jinahya@gmail.com</email>
+    </developer>
+  </developers>
+
+  <prerequisites>
+    <maven>3.0.4</maven>
+  </prerequisites>
+
+  <scm>
+    <connection>scm:git:git@github.com:jinahya/${project.artifactId}.git</connection>
+    <developerConnection>scm:git:git@github.com:jinahya/${project.artifactId}.git</developerConnection>
+    <url>https://github.com/jinahya/${project.artifactId}</url>
+    <tag>HEAD</tag>
+  </scm>
+  <issueManagement>
+    <system>GitHub Issues</system>
+    <url>https://github.com/jinahya/${project.artifactId}/issues</url>
+  </issueManagement>
+  <ciManagement>
+    <system>Travis CI</system>
+    <url>https://travis-ci.org/jinahya/ossrh-parent</url>
+  </ciManagement>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <!--
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+    -->
+  </distributionManagement>
+
   <build>
     <pluginManagement>
       <plugins>
@@ -48,64 +94,8 @@
         </plugin>
       </plugins>
     </pluginManagement>
-    <plugins>
-    </plugins>
   </build>
-  <reporting />
 
-  <!-- More Project Information -->
-  <name>${project.artifactId}</name>
-  <description>parent pom for ossrh</description>
-  <url>https://github.com/jinahya/${project.artifactId}</url>
-  <inceptionYear>2015</inceptionYear>
-  <licenses>
-    <license>
-      <name>Apache 2</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-      <distribution>repo</distribution>
-      <comments>A business-friendly OSS license</comments>
-    </license>
-  </licenses>
-  <organization />
-  <developers>
-    <developer>
-      <id>jinahya</id>
-      <name>Jin Kwon</name>
-      <email>jinahya@gmail.com</email>
-    </developer>
-  </developers>
-  <contributors />
-
-  <!-- Environment Settings -->
-  <issueManagement>
-    <system>GitHub Issues</system>
-    <url>https://github.com/jinahya/${project.artifactId}/issues</url>
-  </issueManagement>
-  <ciManagement />
-  <mailingLists />
-  <scm>
-    <connection>scm:git:git@github.com:jinahya/${project.artifactId}.git</connection>
-    <developerConnection>scm:git:git@github.com:jinahya/${project.artifactId}.git</developerConnection>
-    <url>https://github.com/jinahya/${project.artifactId}</url>
-    <tag>HEAD</tag>
-  </scm>
-  <prerequisites>
-    <maven>3.0.4</maven>
-  </prerequisites>
-  <repositories />
-  <pluginRepositories />
-  <distributionManagement>
-    <snapshotRepository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
-    <!--
-    <repository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>
-    -->
-  </distributionManagement>
   <profiles>
     <profile>
       <id>demeester</id>
