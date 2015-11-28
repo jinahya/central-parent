@@ -7,7 +7,7 @@
   <version>0.3.2-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>ossrh-parent</name>
+  <name>${project.artifactId}</name>
   <description>parent pom for ossrh</description>
   <url>https://github.com/jinahya/${project.artifactId}</url>
   <inceptionYear>2015</inceptionYear>
@@ -35,7 +35,7 @@
   <scm>
     <connection>scm:git:git@github.com:jinahya/${project.artifactId}.git</connection>
     <developerConnection>scm:git:git@github.com:jinahya/${project.artifactId}.git</developerConnection>
-    <url>https://github.com/jinahya/${project.artifactId}</url>
+    <url>git@github.com:jinahya/${project.artifactId}.git</url>
     <tag>HEAD</tag>
   </scm>
   <issueManagement>
@@ -44,7 +44,7 @@
   </issueManagement>
   <ciManagement>
     <system>Travis CI</system>
-    <url>https://travis-ci.org/jinahya/ossrh-parent</url>
+    <url>https://travis-ci.org/jinahya/${project.artifactId}</url>
   </ciManagement>
   <distributionManagement>
     <snapshotRepository>
