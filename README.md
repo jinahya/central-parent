@@ -35,6 +35,6 @@ We need two credentials. One for `nexus-staging-maven-plugin` and the other for 
 ## deploy
 Now you can release artifact as following.
 ```
-$ mvn checkout x.y.z
+$ git checkout x.y.z
 $ mvn -Possrh clean deploy
 ```
