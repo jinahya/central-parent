@@ -27,10 +27,6 @@
     </developer>
   </developers>
 
-  <prerequisites>
-    <maven>3.3.9</maven>
-  </prerequisites>
-
   <scm>
     <connection>scm:git:git@github.com:jinahya/${project.artifactId}.git</connection>
     <developerConnection>scm:git:git@github.com:jinahya/${project.artifactId}.git</developerConnection>
@@ -50,6 +46,10 @@
     -->
   </distributionManagement>
 
+  <properties>
+    <maven-javadoc-plugin.version>2.10.3</maven-javadoc-plugin.version>
+  </properties>
+
   <build>
     <pluginManagement>
       <plugins>
@@ -66,7 +66,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
-          <version>2.10.3</version>
+          <version>${maven-javadoc-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
