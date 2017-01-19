@@ -37,3 +37,6 @@ Now you can release artifact as following.
 $ git checkout x.y.z
 $ mvn -Possrh clean deploy
 ```
+
+## caveats
+Note that, by invoking the `deploy` goal with the `-Possrh` profile, you're intending to deploy the artifact to the OSSRH (snapshot|release) repository. When the `${project.version}` doesn't have a `SNAPSHOT`, the deployed artifact will also be automatically synchronized to the Maven Central Respository.
