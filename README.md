@@ -32,7 +32,7 @@ We need two credentials. One for `nexus-staging-maven-plugin` and the other for 
 </server>
 ```
 ## deploy
-Now you can deploy the artifact as following.
+Now you can deploy the artifact (to the OSSRH repository) as following.
 ```
 $ git checkout x.y.z
 $ mvn -Possrh clean deploy
