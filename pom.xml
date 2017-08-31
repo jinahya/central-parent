@@ -25,6 +25,11 @@
       <name>Jin Kwon</name>
       <email>jinahya@gmail.com</email>
     </developer>
+    <developer>
+      <id>onait</id>
+      <name>Jin Kwon</name>
+      <email>onacit@gmail.com</email>
+    </developer>
   </developers>
 
   <scm>
@@ -46,10 +51,6 @@
     -->
   </distributionManagement>
 
-  <properties>
-    <maven-javadoc-plugin.version>2.10.4</maven-javadoc-plugin.version>
-  </properties>
-
   <build>
     <pluginManagement>
       <plugins>
@@ -66,7 +67,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
-          <version>${maven-javadoc-plugin.version}</version>
+          <version>2.10.4</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
