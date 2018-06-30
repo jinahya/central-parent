@@ -19,6 +19,10 @@
     </license>
   </licenses>
 
+  <properties>
+    <version.maven-javadoc-plugin>3.0.1</version.maven-javadoc-plugin>
+  </properties>
+
   <developers>
     <developer>
       <id>jinahya</id>
@@ -71,7 +75,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
-          <version>3.0.1</version>
+          <version>${version.maven-javadoc-plugin}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
