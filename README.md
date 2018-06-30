@@ -4,7 +4,8 @@
 
 A parent pom for deploying artifacts to `oss.sonatype.org`. see [OSSRH Guide](http://central.sonatype.org/pages/ossrh-guide.html) (or [Apache Maven specific](http://central.sonatype.org/pages/apache-maven.html)). You might also want to see [Working with PGP Signatures](http://central.sonatype.org/pages/working-with-pgp-signatures.html).
 
-## `pom.xml`
+## Configure
+### `pom.xml`
 Just set this artifact as parent.
 ```xml
 <parent>
@@ -13,10 +14,8 @@ Just set this artifact as parent.
   <version>x.y.z</version>
 </parent>
 ```
-## `settings.xml`
-
+### `settings.xml`
 We need two credentials. One for `nexus-staging-maven-plugin` and the other for `maven-gpg-plugin`.
-
 ```xml
 <!-- for nexus-staging-maven-plugin -->
 <server>
@@ -32,9 +31,9 @@ We need two credentials. One for `nexus-staging-maven-plugin` and the other for 
 </server>
 ```
 
-## deploy
+## Deploy
 
-### snapshots
+### Snapshots
 
 Snapshots can be deployed as it is.
 
@@ -42,7 +41,7 @@ Snapshots can be deployed as it is.
 $ mvn deploy
 ```
 
-### releases
+### Releases
 
 Releases can be deployed like this.
 
@@ -51,6 +50,6 @@ $ git checkout x.y.z
 $ mvn -Possrh deploy
 ```
 
-## caveats
+## Caveats
 
 Note that, by invoking the `deploy` goal with the `-Possrh` profile, you're intending to deploy the artifact to the OSSRH (snapshot|release) repository. When the `${project.version}` doesn't have a `SNAPSHOT`, the deployed artifact will also be automatically synchronized to the Maven Central Respository.
