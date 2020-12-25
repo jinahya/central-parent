@@ -46,7 +46,7 @@ $ mvn deploy
 Releases can be deployed like this.
 
 ```
-$ git checkout x.y.z
+$ git switch -d x.y.z
 $ mvn -Possrh deploy
 ```
 
