@@ -20,7 +20,7 @@
   </licenses>
 
   <properties>
-    <version.maven-javadoc-plugin>3.2.0</version.maven-javadoc-plugin>
+    <version.maven-javadoc-plugin>3.3.1</version.maven-javadoc-plugin>
   </properties>
 
   <developers>
@@ -64,7 +64,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-gpg-plugin</artifactId>
-          <version>1.6</version>
+          <version>3.0.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
