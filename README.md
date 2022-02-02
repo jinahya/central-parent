@@ -47,7 +47,14 @@ Releases can be deployed like this.
 
 ```
 $ git switch -d x.y.z
-$ mvn -Possrh deploy
+$ mvn -Possrh clean deploy
+```
+
+If your project provisioned on https://s01.oss.sonatype.org/
+
+```shell
+$ git switch -d x.y.z
+$ mvn -Possrh,s01 clean deploy
 ```
 
 ## Caveats
