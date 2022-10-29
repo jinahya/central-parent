@@ -11,7 +11,6 @@ Just set this artifact as parent.
 <parent>
   <groupId>com.github.jinahya</groupId>
   <artifactId>ossrh-parent</artifactId>
-  <version>x.y.z</version>
 </parent>
 ```
 ### `settings.xml`
