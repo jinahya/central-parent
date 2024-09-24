@@ -1,2 +1,2 @@
 #!/bin/sh
-mvn -Possrh clean deploy
+mvn -Pcentral clean deploy

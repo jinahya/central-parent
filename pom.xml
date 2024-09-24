@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.github.jinahya</groupId>
-  <artifactId>ossrh-parent</artifactId>
-  <version>1.0.8-SNAPSHOT</version>
+  <groupId>io.github.jinahya</groupId>
+  <artifactId>central-parent</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>${project.artifactId}</name>
-  <description>parent pom for ossrh</description>
+  <description>parent pom for the central</description>
   <url>https://github.com/jinahya/${project.artifactId}</url>
   <licenses>
     <license>
@@ -94,10 +94,7 @@
 
   <profiles>
     <profile>
-      <id>ossrh</id>
-      <properties>
-        <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-      </properties>
+      <id>central</id>
       <build>
         <plugins>
           <plugin>
@@ -166,34 +163,16 @@
             </executions>
           </plugin>
           <plugin>
-            <groupId>org.sonatype.plugins</groupId>
-            <artifactId>nexus-staging-maven-plugin</artifactId>
+            <groupId>org.sonatype.central</groupId>
+            <artifactId>central-publishing-maven-plugin</artifactId>
+            <version>0.6.0</version>
             <extensions>true</extensions>
             <configuration>
-              <serverId>ossrh</serverId>
-              <!--              <nexusUrl>https://oss.sonatype.org/</nexusUrl>-->
-              <nexusUrl>${nexusUrl}</nexusUrl>
-              <autoReleaseAfterClose>true</autoReleaseAfterClose>
+              <publishingServerId>central</publishingServerId>
             </configuration>
           </plugin>
         </plugins>
       </build>
-    </profile>
-    <profile> <!-- https://central.sonatype.org/publish/publish-maven/ -->
-      <id>s01</id>
-      <properties>
-        <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl> <!-- nexus-staging-maven-plugin -->
-      </properties>
-      <distributionManagement>
-        <snapshotRepository>
-          <id>ossrh</id>
-          <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-          <id>ossrh</id>
-          <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-      </distributionManagement>
     </profile>
     <profile>
       <id>enforcer-do-not-bother</id>
