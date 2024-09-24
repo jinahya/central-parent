@@ -4,7 +4,7 @@
 
   <groupId>io.github.jinahya</groupId>
   <artifactId>central-parent</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.3-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>${project.artifactId}</name>
@@ -36,7 +36,7 @@
     <connection>scm:git:git@github.com:jinahya/${project.artifactId}.git</connection>
     <developerConnection>scm:git:git@github.com:jinahya/${project.artifactId}.git</developerConnection>
     <url>git@github.com:jinahya/${project.artifactId}.git</url>
-    <tag>0.0.2</tag>
+    <tag>ossrh-parent-0.9.1</tag>
   </scm>
   <distributionManagement>
     <snapshotRepository>
