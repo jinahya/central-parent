@@ -1,6 +1,6 @@
 # ossrh-parent
-[![Build Status](https://travis-ci.org/jinahya/central-parent.svg)](https://travis-ci.org/jinahya/ossrh-parent)
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.jinahya/central-parent.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.github.jinahya%22%20AND%20a%3A%22ossrh-parent%22)
+[![Java CI with Maven](https://github.com/jinahya/central-parent/actions/workflows/maven.yml/badge.svg)](https://github.com/jinahya/central-parent/actions/workflows/maven.yml)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.jinahya/central-parent.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22io.github.jinahya%22%20AND%20a%3A%22central-parent%22)
 
 A parent pom for deploying artifacts to the [Central Repository](https://central.sonatype.org/).
 
