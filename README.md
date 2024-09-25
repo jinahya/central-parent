@@ -1,4 +1,5 @@
-# ossrh-parent
+# central-parent
+
 [![Java CI with Maven](https://github.com/jinahya/central-parent/actions/workflows/maven.yml/badge.svg)](https://github.com/jinahya/central-parent/actions/workflows/maven.yml)
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.jinahya/central-parent.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22io.github.jinahya%22%20AND%20a%3A%22central-parent%22)
 
@@ -19,7 +20,7 @@ Just set this artifact as parent.
 
 ### `settings.xml`
 
-See [Publishing By Using the Maven Plugin](https://central.sonatype.org/publish/publish-portal-maven/).
+Put your credentials to the `$M2_HOME/settings.xml`. See [Publishing By Using the Maven Plugin](https://central.sonatype.org/publish/publish-portal-maven/).
 
 ```xml
 <server>
@@ -30,6 +31,8 @@ See [Publishing By Using the Maven Plugin](https://central.sonatype.org/publish/
 ```
 
 ## Deploy
+
+See [Publishing By Using the Maven Plugin](https://central.sonatype.org/publish/publish-portal-maven/) for more options.
 
 ```
 $ git switch -d x.y.z
