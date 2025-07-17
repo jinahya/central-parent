@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>io.github.jinahya</groupId>
@@ -36,7 +37,6 @@
     <connection>scm:git:git@github.com:jinahya/${project.artifactId}.git</connection>
     <developerConnection>scm:git:git@github.com:jinahya/${project.artifactId}.git</developerConnection>
     <url>git@github.com:jinahya/${project.artifactId}.git</url>
-    <tag>ossrh-parent-0.9.1</tag>
   </scm>
   <distributionManagement>
     <snapshotRepository>
@@ -209,32 +209,5 @@
         </plugins>
       </build>
     </profile>
-    <!--    <profile>-->
-    <!--      <id>enforcer-do-not-bother</id>-->
-    <!--      <build>-->
-    <!--        <plugins>-->
-    <!--          <plugin>-->
-    <!--            <groupId>org.apache.maven.plugins</groupId>-->
-    <!--            <artifactId>maven-enforcer-plugin</artifactId>-->
-    <!--            <version>3.5.0</version>-->
-    <!--            <executions>-->
-    <!--              <execution>-->
-    <!--                <id>enforce-maven</id>-->
-    <!--                <goals>-->
-    <!--                  <goal>enforce</goal>-->
-    <!--                </goals>-->
-    <!--                <configuration>-->
-    <!--                  <rules>-->
-    <!--                    <requireMavenVersion>-->
-    <!--                      <version>[3.6.3,)</version>-->
-    <!--                    </requireMavenVersion>-->
-    <!--                  </rules>-->
-    <!--                </configuration>-->
-    <!--              </execution>-->
-    <!--            </executions>-->
-    <!--          </plugin>-->
-    <!--        </plugins>-->
-    <!--      </build>-->
-    <!--    </profile>-->
   </profiles>
 </project>
