@@ -50,7 +50,7 @@
   </distributionManagement>
 
   <properties>
-    <version.maven-javadoc-plugin>3.11.2</version.maven-javadoc-plugin>
+    <version.maven-javadoc-plugin>3.11.3</version.maven-javadoc-plugin>
   </properties>
 
   <build>
