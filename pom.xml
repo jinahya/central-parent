@@ -74,11 +74,13 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-release-plugin</artifactId>
+          <!-- https://central.sonatype.com/artifact/org.apache.maven.plugins/maven-release-plugin/versions -->
           <version>3.1.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-source-plugin</artifactId>
+          <!-- https://central.sonatype.com/artifact/org.apache.maven.plugins/maven-source-plugin/versions -->
           <version>3.3.1</version>
         </plugin>
         <plugin>
