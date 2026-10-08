@@ -1,2 +1,2 @@
 #!/bin/sh
-mvn -Pcentral clean deploy
+./mvnw -Pcentral clean deploy
