@@ -96,7 +96,8 @@
         <plugin>
           <groupId>org.sonatype.central</groupId>
           <artifactId>central-publishing-maven-plugin</artifactId>
-          <version>0.11.0</version>
+          <!-- https://central.sonatype.com/artifact/org.sonatype.central/central-publishing-maven-plugin/version -->
+          <version>0.12.0</version>
         </plugin>
         <plugin>
           <groupId>org.sonatype.plugins</groupId>
