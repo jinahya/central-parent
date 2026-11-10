@@ -81,9 +81,22 @@ Put your user token into `~/.m2/settings.xml`. The `<id>` must be `central`.
 </settings>
 ```
 
-For signing, the `maven-gpg-plugin` runs with `--pinentry-mode loopback`; provide the passphrase via the `MAVEN_GPG_PASSPHRASE` environment variable.
+### 4. Provide the GPG passphrase
 
-### 4. Publish
+The `central-releases` profile signs with the `maven-gpg-plugin`. Following its [recommendations](https://maven.apache.org/plugins/maven-gpg-plugin/usage.html), provide the passphrase in one of these ways:
+
+* **On a workstation**, let `gpg-agent` provide it. In batch mode (`-B`, or the build that `release:perform` runs) the agent can't prompt, so cache the passphrase beforehand.
+  ```
+  $ echo test | gpg --clearsign
+  ```
+* **On CI**, or anywhere without an agent, set the `MAVEN_GPG_PASSPHRASE` environment variable. Don't type it inline, or it ends up in your shell history.
+  ```
+  $ read -s -p "GPG passphrase: " MAVEN_GPG_PASSPHRASE; export MAVEN_GPG_PASSPHRASE
+  ```
+
+Don't put the passphrase in `settings.xml` or pass it with `-Dgpg.passphrase`; both are deprecated by the plugin.
+
+### 5. Publish
 
 #### Releases
 
