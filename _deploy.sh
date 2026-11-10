@@ -1,2 +1,2 @@
 #!/bin/sh
-./mvnw -Pcentral clean deploy
+./mvnw -Pcentral-releases clean deploy
